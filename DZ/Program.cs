@@ -46,14 +46,15 @@ int KolChetnieChisla (int[] array)
     int schetchik = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] %2 == 0 ) schetchik ++;
+        if(array[i] == 0 ) schetchik = schetchik + 0;
+        else if (array[i] %2 == 0 ) schetchik ++;
     }
     return schetchik; 
 }
 
 int SumElementsNechetnPosition (int[] array)
 {
-    int sum=0; int i = 0;
+    int sum=0; int i = 1;
     while (i < array.Length) 
     {
         sum = array[i]+sum; i = i + 2;
@@ -93,7 +94,7 @@ return  s;
 //Задача 34: 
 //Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
-/*Console.WriteLine("Введите размер массива: ");
+Console.WriteLine("Введите размер массива: ");
 int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Макс= ");
 int max = Convert.ToInt32(Console.ReadLine());
@@ -101,12 +102,12 @@ Console.WriteLine("Мин= ");
 int min = Convert.ToInt32(Console.ReadLine());
 int[] myArray = RandomMasInt(N,min,max);
 PrintMasInt (myArray);
-Console.WriteLine("Кол-во четных чисел = " + KolChetnieChisla(myArray));*/
+Console.WriteLine("Кол-во четных чисел = " + KolChetnieChisla(myArray));
 
 //Задача 36: 
 //Задайте массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
-
-/*Console.WriteLine("Введите размер массива: ");
+/*
+Console.WriteLine("Введите размер массива: ");
 int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Макс= ");
 int max = Convert.ToInt32(Console.ReadLine());
@@ -114,14 +115,14 @@ Console.WriteLine("Мин= ");
 int min = Convert.ToInt32(Console.ReadLine());
 int[] myArray = RandomMasInt(N,min,max);
 PrintMasInt (myArray);
-Console.WriteLine("Сумма эл-тов на нечетных позициях = " + SumElementsNechetnPosition(myArray));*/
-
+Console.WriteLine("Сумма эл-тов на нечетных позициях = " + SumElementsNechetnPosition(myArray));
+*/
 
 
 
 //Задача 38: 
 //Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-
+/*
 Console.WriteLine("Введите размер массива: ");
 int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Макс= ");
@@ -131,3 +132,4 @@ int min = Convert.ToInt32(Console.ReadLine());
 double[] myArray = RandomMasDoubl(N,min,max);
 PrintMasDob (myArray);
 Console.WriteLine("Разница между мин и макс эл-тами массива = " + RaznicaMinMax(MaxElMas(myArray), MinElMas(myArray)));
+*/
