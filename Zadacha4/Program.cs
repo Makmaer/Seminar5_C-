@@ -19,7 +19,7 @@ void PrintMas (int[] array)
     Console.WriteLine();
 }
 
-int DvuznachChisla (int[] array)
+int KolDvuznachChisla (int[] array)
 {
     int schetchik = 0;
     for (int i = 0; i < array.Length; i++)
